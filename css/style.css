@@ -1,0 +1,400 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+    color: #4e4e4e;
+    scroll-behavior: smooth;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.bottom-95 {
+    bottom: 92%;
+}
+
+.start-40 {
+    left: 35%;
+}
+
+/* --------------------------------------- */
+
+/* nav */
+
+.navbar-brand {
+    font-family: "Jersey 20", sans-serif;
+}
+
+.navbar-toggler-icon {
+    background-image: url('../uploads/bar.png');
+}
+
+.navbar .navbar-nav a:not(.dropdown-menu a)::before {
+    position: absolute;
+    content: "";
+    width: 85%;
+    bottom: 0;
+    right: 100%;
+    padding: 1px;
+    background-color: white;
+    transition: all 0.6s;
+}
+
+.navbar .navbar-nav li a.active {
+    border-bottom: 1px;
+
+}
+
+.navbar .navbar-nav li:hover a::before,
+.navbar .navbar-nav li a.active::before {
+    right: 15%;
+}
+
+.navbar .navbar-nav .dropdown-menu a:hover,
+.navbar .navbar-nav .dropdown-menu a:focus {
+    color: #0078FF !important;
+}
+
+
+.navbar .navbar-nav .dropdown:hover>.dropdown-menu,
+.navbar .navbar-nav .dropend:hover>.dropdown-menu {
+    display: block;
+}
+
+.navbar .navbar-nav .dropend:hover .dropdown-menu {
+    top: 0;
+    right: 100%;
+}
+
+/* nav */
+/* --------------------------------------- */
+/* home */
+.bg-img {
+    background-image: linear-gradient(rgb(0 0 0 / 82%) 0% 100%), url(../uploads/hero-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.color {
+    color: #0062D3 !important;
+}
+
+.bg-img h2 {
+    font-size: 3rem;
+}
+
+.navbar-brand.bg-img h2 span {
+    color: antiquewhite;
+}
+
+
+.bg-img p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    color: aliceblue;
+    animation-name: curser;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes curser {
+    0% {
+        content: "|";
+    }
+
+    3% {
+        content: "";
+    }
+
+    6% {
+        content: "R|";
+    }
+
+    9% {
+        content: "Re|";
+    }
+
+    12% {
+        content: "Res|";
+    }
+
+    15% {
+        content: "Rest|";
+    }
+
+    18% {
+        content: "Resta|";
+    }
+
+    21% {
+        content: "Restau|";
+    }
+
+    24% {
+        content: "Restaur|";
+    }
+
+    27% {
+        content: "Restaura|";
+    }
+
+    30% {
+        content: "Restauran|";
+    }
+
+    33% {
+        content: "Restaurant|";
+    }
+
+    36% {
+        content: "Restaurant";
+    }
+
+    39% {
+        content: "Restaurant|";
+    }
+
+    42% {
+        content: "Restauran|";
+    }
+
+    45% {
+        content: "Restaura|";
+    }
+
+    48% {
+        content: "Restaur|";
+    }
+
+    51% {
+        content: "Restau|";
+    }
+
+    54% {
+        content: "Resta|";
+    }
+
+    57% {
+        content: "Res|";
+    }
+
+    60% {
+        content: "Re|";
+    }
+
+    63% {
+        content: "R|";
+    }
+
+    66% {
+        content: "|";
+    }
+
+    69% {
+        content: "";
+    }
+
+    72% {
+        content: "C|";
+    }
+
+    75% {
+        content: "Ca|";
+    }
+
+    78% {
+        content: "Caf|";
+    }
+
+    81% {
+        content: "Cafe";
+    }
+
+    84% {
+        content: "Cafe`|";
+    }
+
+    87% {
+        content: "Cafe`";
+    }
+
+    90% {
+        content: "Cafe|";
+    }
+
+    93% {
+        content: "Caf|";
+    }
+
+    96% {
+        content: "Ca|";
+    }
+
+    99% {
+        content: "C|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+
+/* home */
+/* -------------------------------------- */
+/* ---------------------------------------- */
+/* about */
+#about .h4::before {
+    position: absolute;
+    bottom: 0;
+    content: '';
+    background-color: #0078FF;
+    width: 25%;
+    padding-block: .1rem;
+}
+
+/* about */
+
+/* services */
+.head p::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 48%;
+    width: 5%;
+    padding-block: 2px;
+    background-color: #0078FF;
+}
+
+.circle .border-primary {
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 0 0 10px #0078ff;
+}
+
+.card:hover .border-primary {
+    transition: all 1s ease;
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+/* services */
+/* rates */
+.counters {
+
+    background-image: linear-gradient(rgba(0, 120, 255, 0.7) 0% 100%), url(../uploads/counters-bg.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.counters .icon {
+    box-shadow: #cde1f8 0 0 0 10px;
+    transition: all 0.3s;
+}
+
+/* rates */
+/* porto */
+
+.portfolio .overflow-hidden img {
+    transition: all 1s;
+}
+
+.portfolio .col-md-6:hover .overflow-hidden img {
+    transform: scale(1.1);
+}
+
+.height {
+    width: 50px;
+    height: 50px;
+}
+
+/* porto */
+/* carousel */
+.testimonial-section {
+    background-image: linear-gradient(rgba(0, 120, 255, 0.7) 0% 100%), url(../uploads/overlay-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.testimonial-section .carousel .my-btns button,
+.blog .blog-content .content-footer img {
+    width: 15px;
+    height: 15px;
+}
+
+/* carousel */
+/* blog */
+
+.blog .blog-content .content-footer img {
+    height: 2rem;
+    width: 2rem;
+}
+
+/* blog */
+/* contact */
+
+.contact {
+    background-image: linear-gradient(rgba(0, 120, 255, 0.7) 0% 100%), url(../uploads/overlay-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contact .social-list .icon {
+    width: 40px;
+    height: 40px;
+    box-shadow: #0078FF 0 0 0 5px;
+    transition: all 0.6s;
+}
+
+.contact .icon:hover {
+    background-color: #0078FF;
+    box-shadow: #0077ff58 0 0 0 4px;
+}
+
+.before::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 20%;
+    padding-block: 2px;
+    background-color: #0062D3;
+}
+
+.form input,
+textarea {
+    border: 1px solid rgb(128 128 128 / 34%);
+}
+
+.form input:focus,
+textarea:focus,
+.form button:hover {
+    border-color: #0078ff;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+}
+
+/* contact */
+
+.footer {
+    background-color: #0062D3;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1) inset;
+}
